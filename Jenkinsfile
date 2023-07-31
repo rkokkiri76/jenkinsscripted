@@ -19,7 +19,8 @@ if (currentBuild.currentResult == 'SUCCESS') {
 stage('Deploy') {
         
                 echo "Deploying.... ${params.name}"
-                sh "testing.sh ${params.name}"
+                #sh "testing.sh ${params.name}"
+                 sh "ls -ltr"
         
         }
 }    
