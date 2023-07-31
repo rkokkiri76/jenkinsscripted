@@ -1,4 +1,4 @@
 #!/bin/bash
-name = $1
+name=$1
 
 echo "$name"
