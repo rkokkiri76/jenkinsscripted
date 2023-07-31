@@ -1,6 +1,9 @@
 //scripted pipeline in groovy
 node  {
-      
+      stage ('checkout') {
+        checkout scmGit(branches: [[name: 'main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/rkokkiri76/jenkinsscripted.git']])
+
+      }
         stage('Build') {
         
                 echo 'Building..'
